@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Wed Sep 04 2024 14:57:16 GMT+0000 (Coordinated Universal Time) -->
+<html
+  data-wf-domain="garrets-fabulous-site.webflow.io"
+  data-wf-page="66d87265f869f99a5b9f6bde"
+  data-wf-site="66d87265f869f99a5b9f6b91"
+  data-wf-status="1"
+  lang="en"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add Notices</title>
+
+    <link href="/style2.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="menu-wrapper">
+      <div class="contact-social-wrapper">
+        <div class="contact-info-left">
+          <a href="mailto:team@navkshitij.org" class="email-link"
+            >Email: team@navkshitij.org</a
+          >
+        </div>
+
+        <div class="social-media-icons">
+          <a
+            href="https://www.facebook.com/navkshitij.org/"
+            target="_blank"
+            class="social-link"
+          >
+            <img src="/images/facebook-icon.png" alt="Facebook Icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/navkshitijindia/"
+            target="_blank"
+            class="social-link"
+          >
+            <img src="/images/instagram-icon.png" alt="Instagram Icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/navkshitijindia/"
+            target="_blank"
+            class="social-link"
+          >
+            <img src="/images/linkedin-icon.png" alt="LinkedIn Icon" />
+          </a>
+        </div>
+
+        <div class="contact-info-right">
+          <a class="phone-link">Call: +91 72497 16822</a>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="/" class="brand w-nav-brand">
+              <img
+                id="logo"
+                src="/images/navkshitijLogo.png"
+                alt="Navkshitij Logo"
+              />
+            </a>
+
+            <nav class="nav-menu w-nav-menu">
+              <!-- Profile -->
+              <a href="/profile" class="nav-link w-nav-link">Profile</a>
+
+              <!-- Volunteer with Dropdown -->
+              <div class="dropdown">
+                <button class="dropdown-toggle nav-link w-nav-link">
+                  Volunteer
+                </button>
+                <div class="dropdown-content">
+                  <a href="/volunteer-management">Volunteer Management</a>
+                  <a href="/volunteer-analytics">Volunteer Analytics</a>
+                  <a href="/applications">Applications</a>
+                </div>
+              </div>
+
+              <!-- Calendar -->
+              <a href="/calendar" class="nav-link w-nav-link">Calendar</a>
+
+              <!-- Logout -->
+              <a href="/logout" class="nav-link w-nav-link">Logout</a>
+            </nav>
+
+            <div class="nav-button w-nav-button">
+              <div class="w-icon-nav-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="container">
+        <form action="/add-notice" method="post">
+          <h2>Add Notice</h2>
+          <div class="form-group">
+            <label for="notice">Notice:</label>
+            <textarea
+              id="notice"
+              name="notice"
+              rows="4"
+              cols="50"
+              placeholder="Enter notice here..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Add Notice</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
